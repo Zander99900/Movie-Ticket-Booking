@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="payment.css">
+
+</head>
+<body>
+<div class="container">
+    
+    <form action="ticket.html">
+        
+        <div class="row">
+            
+            <div class="col">
+                
+                <h3 class="title">billing address</h3>
+                
+                <div class="inputBox">
+                    <span>full name :</span>
+                    <input type="text" placeholder="Aditya Nayak">
+                </div>
+                <div class="inputBox">
+                    <span>email :</span>
+                    <input type="email" placeholder="example@example.com">
+                </div>
+                <p class="Text">
+                    <span>amount :</span>
+                    <span id="A">0</span>
+                </p>
+
+                
+            </div>
+            
+            <div class="col">
+                
+                <h3 class="title">payment</h3>
+                
+                <div class="inputBox">
+                    <span>cards accepted :</span>
+                    <img src="img/card_img.png" alt="">
+                </div>
+                <div class="inputBox">
+                    <span>name on card :</span>
+                    <input type="text" placeholder="mr. Aditya Nayak">
+                </div>
+                <div class="inputBox">
+                    <span>Credit/Debit card number :</span>
+                    <input type="number" placeholder="1111-2222-3333-4444">
+                </div>
+                <div class="inputBox">
+                    <span>exp month :</span>
+                    <input type="text" placeholder="June">
+                </div>
+                
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>exp year :</span>
+                        <input type="number" placeholder="2022">
+                    </div>
+                    <div class="inputBox">
+                        <span>CVV :</span>
+                        <input type="text" placeholder="123">
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+        <input type="submit" value="proceed to checkout" class="submit-btn">
+    </form>
+    <script src="script.js">
+
+    </script>
+    <script>
+        
+        document.getElementById('A').innerHTML=localStorage.getItem('set') * localStorage.getItem('selectedMoviePrice')
+    </script>
+</div>
+</body>
+
+</html>
